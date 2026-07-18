@@ -1,0 +1,3 @@
+node,available_replicas,min_available,has_critical_pod
+node-a,5,3,no
+node-b,2,2,no
