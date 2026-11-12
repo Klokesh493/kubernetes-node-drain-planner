@@ -4,11 +4,14 @@ Plans safe node drains by checking replicas, pod disruption budgets, and critica
 
 ```mermaid
 flowchart LR
-    N0["sample_nodes.csv"]
-    N1["drain_planner.py"]
-    N2["can drain"]
-    N3["Result for operator review"]
-    N0 --> N1 --> N2 --> N3
+    A["Node replica and critical pod CSV"]
+    B["Evaluate replica minimum and critical pod checks"]
+    C{"Any blocking reason?"}
+    D["Hold with all reason codes"]
+    E["Drain recommendation"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
 ```
 
 ## Operational boundaries

@@ -24,6 +24,18 @@ Run `make verify` with Make and Python 3 installed. The target runs the document
 
 ## Project walkthrough
 
+```mermaid
+flowchart LR
+    A["Node replica and critical pod CSV"]
+    B["Evaluate replica minimum and critical pod checks"]
+    C{"Any blocking reason?"}
+    D["Hold with all reason codes"]
+    E["Drain recommendation"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
+```
+
 [Architecture and data flow](docs/ARCHITECTURE.md) · [Business problem, demo, and verification](docs/CASE_STUDY.md)
 
 Use `python3 drain_planner.py sample_nodes.csv --json` to see replica counts
