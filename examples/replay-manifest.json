@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Demo 1",
+    "args": [
+      "drain_planner.py",
+      "sample_nodes.csv"
+    ],
+    "expected": "examples/Demo 1.stdout.txt"
+  },
+  {
+    "name": "Hold evidence",
+    "args": [
+      "drain_planner.py",
+      "sample_nodes.csv",
+      "--json"
+    ],
+    "expected": "examples/Hold evidence.stdout.txt"
+  }
+]
