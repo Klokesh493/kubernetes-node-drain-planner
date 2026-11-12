@@ -17,3 +17,7 @@ python3 drain_planner.py sample_nodes.csv
 ```bash
 python3 -m unittest discover . -v
 ```
+
+## Local verification
+
+Run `make verify` with Make and Python 3 installed. The target runs the documented sample through the project CLI. It also runs the existing Python unit tests.
