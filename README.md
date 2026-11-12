@@ -25,3 +25,6 @@ Run `make verify` with Make and Python 3 installed. The target runs the document
 ## Project walkthrough
 
 [Architecture and data flow](docs/ARCHITECTURE.md) · [Business problem, demo, and verification](docs/CASE_STUDY.md)
+
+Use `python3 drain_planner.py sample_nodes.csv --json` to see replica counts
+and hold reasons alongside each decision.
