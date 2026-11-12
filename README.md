@@ -22,6 +22,10 @@ python3 -m unittest discover . -v
 
 Run `make verify` with Make and Python 3 installed. The target runs the documented sample through the project CLI. It also runs the existing Python unit tests.
 
+## Business problem
+
+A planned node drain can reduce replica availability or disrupt a critical workload. Operators need to see the blockers before scheduling maintenance.
+
 ## Project walkthrough
 
 ```mermaid

@@ -2,7 +2,7 @@
 
 ## Business problem
 
-Plans safe node drains by checking replicas, pod disruption budgets, and critical workloads.
+A planned node drain can reduce replica availability or disrupt a critical workload. Operators need to see the blockers before scheduling maintenance.
 
 ## Reproduce the workflow
 
